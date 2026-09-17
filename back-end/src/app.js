@@ -14,4 +14,6 @@ app.use('/public', express.static(path.join(__dirname, '..', 'public')));
 // Registro de todas as rotas da API centralizadas
 app.use('/', routes);
 
+app.use('/auth', authRoutes);
+
 module.exports = app;
